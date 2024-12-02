@@ -1,6 +1,6 @@
 import streamlit as st
 from googletrans import Translator
-from gtts import gTTS
+from gtts import gtts
 import os
 import docx2txt
 import PyPDF2
