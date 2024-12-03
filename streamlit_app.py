@@ -86,11 +86,6 @@ if english_word:
         st.markdown(f"<div style='font-size: 24px; font-weight: bold; margin-top: 10px;'>**{english_word}** in French is:</div>", unsafe_allow_html=True)
         st.markdown(f"<div style='font-size: 32px; color: #4CAF50; font-weight: bold;'>{translation}</div>", unsafe_allow_html=True)
 
-        # Add copy button
-        if st.button("Copy Translation"):
-            pyperclip.copy(translation)
-            st.markdown(f"<div style='font-size: 16px; color: green;'>Translation copied to clipboard!</div>", unsafe_allow_html=True)
-
         # Convert both original and translated text to speech (TTS)
         if english_word and translation:
             # Convert English to speech
