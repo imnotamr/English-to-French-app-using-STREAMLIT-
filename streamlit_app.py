@@ -53,35 +53,37 @@ with col1:
                         text += page_text
                     else:
                         st.warning(f"No text extracted from page {page_num + 1}.")
+                
                 if not text:
                     st.warning("No text extracted from the PDF. Please check the document.")
                     english_word = ""
                 else:
                     english_word = text
+
             except Exception as e:
                 st.error(f"Error reading PDF: {e}")
                 english_word = ""
+                
         elif uploaded_file.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
             try:
                 text = docx2txt.process(uploaded_file)
                 if not text:
-                    st.warning("No text extracted from the Word document.")
+                    st.warning("No text extracted from the document. Please check the document.")
                     english_word = ""
                 else:
                     english_word = text
+
             except Exception as e:
                 st.error(f"Error reading Word document: {e}")
                 english_word = ""
 
-# Translate the input text
-if english_word:
-    translated_text = translate_to_french(english_word)
-    st.write(f"Translation: {translated_text}")
+    # Translation
+    if english_word:
+        translation = translate_to_french(english_word)
+        st.write(f"Translation: {translation}")
 
-    # Button to copy translation
-    if st.button("Copy Translation"):
-        try:
-            pyperclip.copy(translated_text)
+        # Add a button to copy translation
+        if st.button("Copy Translation"):
+            pyperclip.copy(translation)
             st.success("Translation copied to clipboard!")
-        except Exception as e:
-            st.error(f"Error copying to clipboard: {e}")
+
