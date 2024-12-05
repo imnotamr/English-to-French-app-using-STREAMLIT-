@@ -1,5 +1,5 @@
 # 🎈 English to French Translator
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://blank-app-template.streamlit.app/)](https://6gcqyb9gx9wu46qkuh5dua.streamlit.app/)
+[![Open in Streamlit]([https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://blank-app-template.streamlit.app/](https://6gcqyb9gx9wu46qkuh5dua.streamlit.app/))]
 
 
 A fully interactive Streamlit-based application designed to translate English text or documents into French, complete with text-to-speech functionality. This project is an ideal tool for anyone looking to learn French or to easily translate content from English, offering support for individual words, entire paragraphs, and even document uploads.
