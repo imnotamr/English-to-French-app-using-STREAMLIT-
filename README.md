@@ -1,4 +1,4 @@
-# 🎈 English to French Translator
+# 🤖 English to French Translator
 
 A fully interactive Streamlit-based application designed to translate English text or documents into French, complete with text-to-speech functionality. This project is an ideal tool for anyone looking to learn French or to easily translate content from English, offering support for individual words, entire paragraphs, and even document uploads.
 
