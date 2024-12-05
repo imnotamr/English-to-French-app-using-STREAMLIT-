@@ -25,7 +25,7 @@ A fully interactive Streamlit-based application designed to translate English te
 - **Error Handling**: Smart error handling for empty inputs, unsupported document types, or issues with translation and text extraction.
 
 ## Live Demo
-A live version of this translator is hosted at [Streamlit Cloud](https://share.streamlit.io/imnotamr/English-to-French-app-using-STREAMLIT/main/app.py). Visit the link to try the translator directly in your browser.
+A live version of this translator is hosted at [Streamlit Cloud](https://6gcqyb9gx9wu46qkuh5dua.streamlit.app/). Visit the link to try the translator directly in your browser.
 
 ## Getting Started
 These instructions will help you set up and run the project on your local machine for development and testing purposes.
