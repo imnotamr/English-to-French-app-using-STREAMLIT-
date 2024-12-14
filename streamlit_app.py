@@ -4,7 +4,6 @@ from gtts import gTTS
 import os
 import docx2txt
 import PyPDF2
-import pyperclip
 import tempfile
 
 # Initialize the translator
